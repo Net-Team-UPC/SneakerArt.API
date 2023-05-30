@@ -20,7 +20,6 @@
     <ItemGroup>
       <Folder Include="Collection\Interfaces\Internal\" />
       <Folder Include="Collection\Interfaces\Rest\" />
-      <Folder Include="Collection\Mapping\" />
       <Folder Include="Collection\Persistence\Repositories\" />
       <Folder Include="Collection\Services\" />
       <Folder Include="Shared\Extensions\" />
