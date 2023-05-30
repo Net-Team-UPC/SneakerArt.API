@@ -22,7 +22,6 @@
       <Folder Include="Collection\Interfaces\Rest\" />
       <Folder Include="Collection\Mapping\" />
       <Folder Include="Collection\Persistence\Repositories\" />
-      <Folder Include="Collection\Resources\" />
       <Folder Include="Collection\Services\" />
       <Folder Include="Shared\Extensions\" />
       <Folder Include="Shared\Persistence\Contexts\" />
