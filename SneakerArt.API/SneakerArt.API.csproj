@@ -18,8 +18,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Collection\Interfaces\Internal\" />
-      <Folder Include="Collection\Interfaces\Rest\" />
+      <Folder Include="Collection\Interfaces\Rest\Controllers\" />
     </ItemGroup>
 
 </Project>
