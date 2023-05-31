@@ -39,6 +39,7 @@ builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IShoeRepository, ShoeRepository>();
 builder.Services.AddScoped<IShoeService, ShoeService>();
 
+
 //AutoMapper Configuration
 builder.Services.AddAutoMapper(
     typeof(SneakerArt.API.Collection.Mapping.ModelToResourceProfile),
