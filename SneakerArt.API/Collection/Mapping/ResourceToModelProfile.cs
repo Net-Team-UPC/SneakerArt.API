@@ -6,7 +6,7 @@ namespace SneakerArt.API.Collection.Mapping;
 
 public class ResourceToModelProfile : Profile
 {
-    protected ResourceToModelProfile()
+    public ResourceToModelProfile()
     {
         CreateMap<SaveShoeResource, Shoe>();
     }
