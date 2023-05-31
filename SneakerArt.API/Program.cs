@@ -1,3 +1,13 @@
+using Microsoft.EntityFrameworkCore;
+using SneakerArt.API.Collection.Domain.Models;
+using SneakerArt.API.Collection.Domain.Repositories;
+using SneakerArt.API.Collection.Domain.Services;
+using SneakerArt.API.Collection.Persistence.Repositories;
+using SneakerArt.API.Collection.Services;
+using SneakerArt.API.Shared.Domain.Repositories;
+using SneakerArt.API.Shared.Persistence.Contexts;
+using SneakerArt.API.Shared.Persistence.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -7,7 +17,45 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+//Add Database Connection
+
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+builder.Services.AddDbContext<AppDbContext>(
+    options => options.UseMySQL(connectionString)
+        .LogTo(Console.WriteLine, LogLevel.Information)
+        .EnableSensitiveDataLogging()
+        .EnableDetailedErrors());
+
+//Lowercase URLs configuration
+builder.Services.AddRouting(options => options.LowercaseUrls = true);
+
+//Dependency Injection Configuration
+
+//Shared Bounded Context Injection Configuration
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+//Collection Bounded Context Injection Configuration
+builder.Services.AddScoped<IShoeRepository, ShoeRepository>();
+builder.Services.AddScoped<IShoeService, ShoeService>();
+
+
+//AutoMapper Configuration
+builder.Services.AddAutoMapper(
+    typeof(SneakerArt.API.Collection.Mapping.ModelToResourceProfile),
+    typeof(SneakerArt.API.Collection.Mapping.ResourceToModelProfile));
+
+//Application build
 var app = builder.Build();
+
+//Validation for ensuring Database Objects are created
+
+using (var scope=app.Services.CreateScope())
+using (var context = scope.ServiceProvider.GetService<AppDbContext>())
+{
+    context.Database.EnsureCreated();
+}
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

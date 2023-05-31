@@ -17,17 +17,4 @@
         <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.5.0" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Collection\Domain\Repositories\" />
-      <Folder Include="Collection\Interfaces\Internal\" />
-      <Folder Include="Collection\Interfaces\Rest\" />
-      <Folder Include="Collection\Mapping\" />
-      <Folder Include="Collection\Persistence\Repositories\" />
-      <Folder Include="Collection\Resources\" />
-      <Folder Include="Collection\Services\" />
-      <Folder Include="Shared\Extensions\" />
-      <Folder Include="Shared\Persistence\Contexts\" />
-      <Folder Include="Shared\Persistence\Repositories\" />
-    </ItemGroup>
-
 </Project>
