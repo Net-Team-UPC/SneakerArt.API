@@ -1,7 +1,10 @@
 using Microsoft.EntityFrameworkCore;
+using SneakerArt.API.Analytics.Domain.Services;
+using SneakerArt.API.Analytics.Services;
 using SneakerArt.API.Collection.Domain.Models;
 using SneakerArt.API.Collection.Domain.Repositories;
 using SneakerArt.API.Collection.Domain.Services;
+using SneakerArt.API.Collection.Interfaces.Internal;
 using SneakerArt.API.Collection.Persistence.Repositories;
 using SneakerArt.API.Collection.Services;
 using SneakerArt.API.Shared.Domain.Repositories;
@@ -38,7 +41,11 @@ builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 //Collection Bounded Context Injection Configuration
 builder.Services.AddScoped<IShoeRepository, ShoeRepository>();
 builder.Services.AddScoped<IShoeService, ShoeService>();
+builder.Services.AddScoped<ICollectionContextFacade, CollectionContextFacade>();
 
+
+//Analytics Bounded Context Injection Configuration
+builder.Services.AddScoped<ICollectionAnalyticsService, CollectionAnalyticsService>();
 
 //AutoMapper Configuration
 builder.Services.AddAutoMapper(
