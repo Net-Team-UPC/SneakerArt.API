@@ -41,11 +41,15 @@ builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 //Collection Bounded Context Injection Configuration
 builder.Services.AddScoped<IShoeRepository, ShoeRepository>();
 builder.Services.AddScoped<IShoeService, ShoeService>();
+/*
 builder.Services.AddScoped<ICollectionContextFacade, CollectionContextFacade>();
+*/
 
 
 //Analytics Bounded Context Injection Configuration
+/*
 builder.Services.AddScoped<ICollectionAnalyticsService, CollectionAnalyticsService>();
+*/
 
 //AutoMapper Configuration
 builder.Services.AddAutoMapper(
