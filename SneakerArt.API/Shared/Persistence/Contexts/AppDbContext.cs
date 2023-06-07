@@ -21,9 +21,9 @@ public class AppDbContext : DbContext
         builder.Entity<Shoe>().HasKey(p => p.Id);
         builder.Entity<Shoe>().Property(p => p.Id).IsRequired().ValueGeneratedOnAdd();
         builder.Entity<Shoe>().Property(p => p.Name).IsRequired().HasMaxLength(50);
-        builder.Entity<Shoe>().Property(p => p.Description).IsRequired().HasMaxLength(50);
+        builder.Entity<Shoe>().Property(p => p.Description).IsRequired().HasMaxLength(200);
         builder.Entity<Shoe>().Property(p => p.Price).IsRequired().HasMaxLength(50);
-        builder.Entity<Shoe>().Property(p => p.Img).IsRequired().HasMaxLength(50);
+        builder.Entity<Shoe>().Property(p => p.Img).IsRequired().HasMaxLength(200);
 
         
         //Relatioships

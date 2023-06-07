@@ -82,3 +82,6 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+//Required for Tests
+public partial class Program {}
