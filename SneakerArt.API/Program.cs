@@ -1,4 +1,6 @@
+using System.Security.Policy;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 using SneakerArt.API.Analytics.Domain.Services;
 using SneakerArt.API.Analytics.Services;
 using SneakerArt.API.Collection.Domain.Models;
@@ -18,7 +20,28 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(options =>
+{
+    options.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Version = "v1",
+        Title = "Net Team SneakerArt API",
+        Description = "Net Team SneakerArt RESTful API",
+        TermsOfService = new Uri("https://net-team-upc.github.io/Landing-Page-NetTeam/"),
+        Contact = new OpenApiContact
+        {
+            Name = "Net Team",
+            Url = new Uri("https://net-team-upc.github.io/Landing-Page-NetTeam/")
+        },
+        License = new OpenApiLicense
+        {
+            Name = "Net Team SneakerArt Resources License",
+            Url = new Uri("https://net-team-upc.github.io/Landing-Page-NetTeam/")
+        }
+    });
+    options.EnableAnnotations();
+});
+
 
 //Add Database Connection
 
@@ -72,7 +95,11 @@ using (var context = scope.ServiceProvider.GetService<AppDbContext>())
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(options =>
+    {
+        options.SwaggerEndpoint("v1/swagger.json","v1");
+        options.RoutePrefix = "swagger";
+    });
 }
 
 app.UseHttpsRedirection();
