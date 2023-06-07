@@ -5,12 +5,14 @@ using SneakerArt.API.Collection.Domain.Models;
 using SneakerArt.API.Collection.Domain.Services;
 using SneakerArt.API.Collection.Resources;
 using SneakerArt.API.Shared.Extensions;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace SneakerArt.API.Collection.Interfaces.Rest.Controllers;
 
 [ApiController]
 [Route("api/v1/[controller]")]
 [Produces(MediaTypeNames.Application.Json)]
+[SwaggerTag("Create, read, update and delete Shoes")]
 public class ShoesController : ControllerBase
 {
     private readonly IShoeService _shoeService;
@@ -24,6 +26,10 @@ public class ShoesController : ControllerBase
 
     [HttpGet]
     [ProducesResponseType(typeof(IEnumerable<ShoeResource>), 200)]
+    [SwaggerOperation(
+        Summary = "Get All Shoes from Collection",
+        Description = "Get existing Shoes associated with the Collection"
+        )]
     public async Task<IEnumerable<ShoeResource>> GetAllAsync()
     {
         var shoes = await _shoeService.ListAsync();
@@ -32,6 +38,13 @@ public class ShoesController : ControllerBase
     }
 
     [HttpPost]
+    [ProducesResponseType(typeof(ShoeResource),201)]
+    [ProducesResponseType(typeof(List<string>),400)]
+    [ProducesResponseType(500)]
+    [SwaggerOperation(
+        Summary = "Post a Shoe to Collection",
+        Description = "Post a new Shoe to the Collection"
+    )]
     public async Task<IActionResult> PostAsync([FromBody] SaveShoeResource resource)
     {
         if (!ModelState.IsValid)
@@ -51,6 +64,10 @@ public class ShoesController : ControllerBase
     }
 
     [HttpPut("{id}")]
+    [SwaggerOperation(
+        Summary = "Put a Shoe from Collection",
+        Description = "Put existing Shoe from the Collection"
+    )]
     public async Task<IActionResult> PutAsync(int id, [FromBody] SaveShoeResource resource)
     {
         if (!ModelState.IsValid)
@@ -70,6 +87,10 @@ public class ShoesController : ControllerBase
     }
 
     [HttpDelete("{id}")]
+    [SwaggerOperation(
+        Summary = "Delete a Shoe to Collection",
+        Description = "Delete existing Shoe to the Collection"
+    )]
     public async Task<IActionResult> DeleteAsync(int id)
     {
         var result = await _shoeService.DeleteAsync(id);
