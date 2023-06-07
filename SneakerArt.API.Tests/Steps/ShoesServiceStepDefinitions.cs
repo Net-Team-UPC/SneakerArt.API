@@ -15,7 +15,8 @@ namespace SneakerArt.API.Tests.Steps;
 public class ShoesServiceStepDefinitions : WebApplicationFactory<Program>
 {
     private readonly WebApplicationFactory<Program> _factory;
-
+    private HttpClient client;
+    private HttpResponseMessage response;
     public ShoesServiceStepDefinitions(WebApplicationFactory<Program> factory)
     {
         _factory = factory;
@@ -59,4 +60,18 @@ public class ShoesServiceStepDefinitions : WebApplicationFactory<Program>
         var resource = JsonConvert.DeserializeObject<ShoeResource>(responseData);
         Assert.Equal(expectedResource.Name, resource.Name);
     }
+
+    [When(@"a Get Request is sent")]
+    public async Task WhenAGetRequestIsSent()
+    {
+        response = await client.GetAsync(BaseUri);
+    }
+    
+    /*[Given(@"the Endpoint https://localhost:(.*)/api/v(.*)/shoes/(.*) is available")]
+    public void GivenTheEndpointHttpsLocalhostApiVShoesIsAvailable(int p0, int p1, int p2)
+    {
+        ScenarioContext.StepIsPending();
+    }*/
+
+
 }
