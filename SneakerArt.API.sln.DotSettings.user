@@ -3,4 +3,5 @@
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::18BC7CE7-6DDF-4EA3-941B-5402DD304C0F::net7.0::SneakerArt.API.Tests.Features.ShoesServiceTestsFeature.AddShoeWithUniqueData&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
-&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
+&lt;/SessionState&gt;</s:String>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=Responsitories/@EntryIndexedValue">True</s:Boolean></wpf:ResourceDictionary>
