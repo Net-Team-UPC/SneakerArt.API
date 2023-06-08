@@ -8,14 +8,15 @@ namespace SneakerArt.API.User.Services;
 
 public class ProfileService : IProfileService
 {
-    private readonly IProfileService _profileRepository;
+    private readonly IProfileRepository _profileRepository;
     private readonly IUnitOfWork _unitOfWork;
 
-    public ProfileService(IProfileService profileRepository, IUnitOfWork unitOfWork)
+    public ProfileService(IProfileRepository profileRepository, IUnitOfWork unitOfWork)
     {
         _profileRepository = profileRepository;
         _unitOfWork = unitOfWork;
     }
+
 
     public async Task<IEnumerable<Profile>> ListAsync()
     {
@@ -57,7 +58,7 @@ public class ProfileService : IProfileService
         }
         catch (Exception e)
         {
-            return new ProfileResponse($"An error occurred while updating the profile: {e.Message}");
+            return new ProfileResponse($"An error occurred while updating the shoe: {e.Message}");
         }
     }
 
@@ -65,7 +66,7 @@ public class ProfileService : IProfileService
     {
         var existingProfile = await _profileRepository.FindByIdAsync(id);
         if(existingProfile == null) 
-            return new ProfileResponse("Profile not found.");
+            return new ProfileResponse("Shoe not found.");
 
         try
         {
@@ -76,7 +77,7 @@ public class ProfileService : IProfileService
         }
         catch(Exception e)
         {
-            return new ProfileResponse($"An error occurred while deleting the profile: {e.Message}");
+            return new ProfileResponse($"An error occurred while deleting the shoe: {e.Message}");
         }
     }
 }

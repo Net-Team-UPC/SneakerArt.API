@@ -2960,24 +2960,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Pieri\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\franc\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Pieri\\OneDrive\\Documents\\GitHub\\SneakerArt.API\\SneakerArt.API\\SneakerArt.API.csproj",
+      "projectUniqueName": "D:\\ProyectosApliWeb\\SneakerArt.API\\SneakerArt.API\\SneakerArt.API.csproj",
       "projectName": "SneakerArt.API",
-      "projectPath": "C:\\Users\\Pieri\\OneDrive\\Documents\\GitHub\\SneakerArt.API\\SneakerArt.API\\SneakerArt.API.csproj",
-      "packagesPath": "C:\\Users\\Pieri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Pieri\\OneDrive\\Documents\\GitHub\\SneakerArt.API\\SneakerArt.API\\obj\\",
+      "projectPath": "D:\\ProyectosApliWeb\\SneakerArt.API\\SneakerArt.API\\SneakerArt.API.csproj",
+      "packagesPath": "C:\\Users\\franc\\.nuget\\packages\\",
+      "outputPath": "D:\\ProyectosApliWeb\\SneakerArt.API\\SneakerArt.API\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Pieri\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\franc\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

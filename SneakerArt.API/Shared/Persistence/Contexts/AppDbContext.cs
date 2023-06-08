@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SneakerArt.API.Collection.Domain.Models;
 using SneakerArt.API.Shared.Extensions;
+using SneakerArt.API.User.Domain.Models;
 
 namespace SneakerArt.API.Shared.Persistence.Contexts;
 
@@ -11,6 +12,7 @@ public class AppDbContext : DbContext
     }
 
     public DbSet<Shoe> Shoes { get; set; }
+    public DbSet<Profile> Profiles { get; set; }
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
@@ -25,6 +27,13 @@ public class AppDbContext : DbContext
         builder.Entity<Shoe>().Property(p => p.Price).IsRequired().HasMaxLength(50);
         builder.Entity<Shoe>().Property(p => p.Img).IsRequired().HasMaxLength(200);
 
+        
+        //Profiles Configuration
+        builder.Entity<Profile>().ToTable("Profiles");
+        builder.Entity<Profile>().Property(p => p.Id).IsRequired().ValueGeneratedOnAdd();
+        builder.Entity<Profile>().Property(p => p.Name).IsRequired().HasMaxLength(50);
+        builder.Entity<Profile>().Property(p => p.Email).IsRequired().HasMaxLength(50);
+        builder.Entity<Profile>().Property(p => p.Password).IsRequired().HasMaxLength(50);
         
         //Relatioships
         

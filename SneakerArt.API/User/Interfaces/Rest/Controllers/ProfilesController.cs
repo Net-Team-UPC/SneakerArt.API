@@ -13,7 +13,7 @@ namespace SneakerArt.API.User.Interfaces.Rest.Controllers;
 [ApiController]
 [Route("api/v1/[controller]")]
 [Produces(MediaTypeNames.Application.Json)]
-[SwaggerTag("Create, read, update and delete Shoes")]
+[SwaggerTag("Create, read, update and delete Profiles")]
 
 public class ProfilesController : ControllerBase
 {
@@ -32,10 +32,10 @@ public class ProfilesController : ControllerBase
         Summary = "Get All Profiles from User",
         Description = "Get existing Profiles associated with the User"
         )]
-    public async Task<IEnumerable<ProfileResponse>> GetAllAsync()
+    public async Task<IEnumerable<ProfileResource>> GetAllAsync()
     {
         var profiles = await _profileService.ListAsync();
-        var resources = _mapper.Map<IEnumerable<Profile>, IEnumerable<ProfileResponse>>(profiles);
+        var resources = _mapper.Map<IEnumerable<Profile>, IEnumerable<ProfileResource>>(profiles);
         return resources;
     }
 

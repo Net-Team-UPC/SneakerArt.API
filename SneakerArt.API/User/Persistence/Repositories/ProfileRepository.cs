@@ -14,26 +14,26 @@ public class ProfileRepository : BaseRepository, IProfileRepository
 
     public async Task<IEnumerable<Profile>> ListAsync()
     {
-        return await _context.Profile.ToListAsync();
+        return await _context.Profiles.ToListAsync();
     }
 
     public async Task AddAsync(Profile profile)
     {
-        await _context.Profile.AddAsync(profile);
+        await _context.Profiles.AddAsync(profile);
     }
 
     public async Task<Profile> FindByIdAsync(int id)
     {
-        return await _context.Profile.FindAsync(id);
+        return await _context.Profiles.FindAsync(id);
     }
 
     public void Update(Profile profile)
     {
-        _context.Profile.Update(profile);
+        _context.Profiles.Update(profile);
     }
 
     public void Remove(Profile profile)
     {
-        _context.Profile.Remove(profile);
+        _context.Profiles.Remove(profile);
     }
 }

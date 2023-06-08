@@ -11,10 +11,4 @@ public interface IProfileService
     Task<ProfileResponse> UpdateAsync(int id, Profile profile);
     Task<ProfileResponse> DeleteAsync(int id);
     
-    
-    //Metodos nuevos
-    Task AddAsync(Profile profile);
-    Task<string> FindByIdAsync(int id);
-    void Update(string existingProfile);
-    void Remove(string existingProfile);
 }

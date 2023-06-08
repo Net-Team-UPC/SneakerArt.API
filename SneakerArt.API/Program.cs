@@ -12,6 +12,11 @@ using SneakerArt.API.Collection.Services;
 using SneakerArt.API.Shared.Domain.Repositories;
 using SneakerArt.API.Shared.Persistence.Contexts;
 using SneakerArt.API.Shared.Persistence.Repositories;
+using SneakerArt.API.User.Domain.Responsitories;
+using SneakerArt.API.User.Domain.Services;
+using SneakerArt.API.User.Interfaces.Internal;
+using SneakerArt.API.User.Persistence.Repositories;
+using SneakerArt.API.User.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -64,20 +69,31 @@ builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 //Collection Bounded Context Injection Configuration
 builder.Services.AddScoped<IShoeRepository, ShoeRepository>();
 builder.Services.AddScoped<IShoeService, ShoeService>();
+
+//User Bounded Context Injection Configuration
+builder.Services.AddScoped<IProfileRepository, ProfileRepository>();
+builder.Services.AddScoped<IProfileService, ProfileService>();
+
+
 /*
 builder.Services.AddScoped<ICollectionContextFacade, CollectionContextFacade>();
+builder.Services.AddScoped<IUserContextFacade, UserContextFacade>();
 */
+
 
 
 //Analytics Bounded Context Injection Configuration
 /*
 builder.Services.AddScoped<ICollectionAnalyticsService, CollectionAnalyticsService>();
+builder.Services.AddScoped<IUserAnalyticsService, UserAnalyticsService>();
 */
 
 //AutoMapper Configuration
 builder.Services.AddAutoMapper(
     typeof(SneakerArt.API.Collection.Mapping.ModelToResourceProfile),
-    typeof(SneakerArt.API.Collection.Mapping.ResourceToModelProfile));
+    typeof(SneakerArt.API.Collection.Mapping.ResourceToModelProfile),
+    typeof(SneakerArt.API.User.Mapping.ModelToResourceProfile),
+    typeof(SneakerArt.API.User.Mapping.ResourceToModelProfile));
 
 //Application build
 var app = builder.Build();
