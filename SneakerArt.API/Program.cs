@@ -74,6 +74,9 @@ builder.Services.AddScoped<IShoeService, ShoeService>();
 builder.Services.AddScoped<IProfileRepository, ProfileRepository>();
 builder.Services.AddScoped<IProfileService, ProfileService>();
 
+//Design Bounded Context Injection Configuration
+builder.Services.AddScoped<IDesignRepository, DesignRepository>();
+builder.Services.AddScoped<IDesignService, DesignService>();
 
 /*
 builder.Services.AddScoped<ICollectionContextFacade, CollectionContextFacade>();
