@@ -78,6 +78,10 @@ builder.Services.AddScoped<IProfileService, ProfileService>();
 builder.Services.AddScoped<IDesignRepository, DesignRepository>();
 builder.Services.AddScoped<IDesignService, DesignService>();
 
+//Comment Bounded Context Injection Configuration
+builder.Services.AddScoped<ICommentRepository, CommentRepository>();
+builder.Services.AddScoped<ICommentService, CommentService>();
+
 /*
 builder.Services.AddScoped<ICollectionContextFacade, CollectionContextFacade>();
 builder.Services.AddScoped<IUserContextFacade, UserContextFacade>();
