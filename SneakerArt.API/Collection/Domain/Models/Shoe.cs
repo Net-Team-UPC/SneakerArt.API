@@ -10,5 +10,7 @@ public class Shoe
 
     
     //Relationships
+    public int CommentId { get; set; }
+    public Comment Comment { get; set; }
     
 }
