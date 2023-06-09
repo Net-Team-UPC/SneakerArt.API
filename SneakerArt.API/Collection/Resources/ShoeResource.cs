@@ -1,4 +1,6 @@
-﻿namespace SneakerArt.API.Collection.Resources;
+﻿using SneakerArt.API.Collection.Domain.Models;
+
+namespace SneakerArt.API.Collection.Resources;
 
 public class ShoeResource
 {
@@ -7,4 +9,5 @@ public class ShoeResource
     public string Description { get; set; }
     public string Price { get; set; }
     public string Img { get; set; }
+    public CommentResource Comment { get; set; }
 }
