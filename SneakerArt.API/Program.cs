@@ -32,11 +32,11 @@ builder.Services.AddSwaggerGen(options =>
         Version = "v1",
         Title = "Net Team SneakerArt API",
         Description = "Net Team SneakerArt RESTful API",
-        TermsOfService = new Uri("https://net-team-upc.github.io/Landing-Page-NetTeam/"),
+        TermsOfService = new Uri("https://net-team-upc.github.io/Landing-Page-NetTeam/terms-of-service/index.html"),
         Contact = new OpenApiContact
         {
             Name = "Net Team",
-            Url = new Uri("https://net-team-upc.github.io/Landing-Page-NetTeam/")
+            Url = new Uri("https://frontend-sneakerart-e85e0.web.app")
         },
         License = new OpenApiLicense
         {
