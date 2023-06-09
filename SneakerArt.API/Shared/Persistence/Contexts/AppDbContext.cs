@@ -13,6 +13,9 @@ public class AppDbContext : DbContext
 
     public DbSet<Shoe> Shoes { get; set; }
     public DbSet<Profile> Profiles { get; set; }
+    
+    public DbSet<Design> Designs { get; set; }
+
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
@@ -30,10 +33,22 @@ public class AppDbContext : DbContext
         
         //Profiles Configuration
         builder.Entity<Profile>().ToTable("Profiles");
+        builder.Entity<Profile>().HasKey(p => p.Id);
         builder.Entity<Profile>().Property(p => p.Id).IsRequired().ValueGeneratedOnAdd();
         builder.Entity<Profile>().Property(p => p.Name).IsRequired().HasMaxLength(50);
         builder.Entity<Profile>().Property(p => p.Email).IsRequired().HasMaxLength(50);
         builder.Entity<Profile>().Property(p => p.Password).IsRequired().HasMaxLength(50);
+        
+        //Designs Configuration
+        builder.Entity<Design>().ToTable("Designs");
+        builder.Entity<Design>().HasKey(p => p.Id);
+        builder.Entity<Design>().Property(p => p.Id).IsRequired().ValueGeneratedOnAdd();
+        builder.Entity<Design>().Property(p => p.Brand).IsRequired().HasMaxLength(50);
+        builder.Entity<Design>().Property(p => p.Model).IsRequired().HasMaxLength(50);
+        builder.Entity<Design>().Property(p => p.Color).IsRequired().HasMaxLength(50);
+        builder.Entity<Design>().Property(p => p.Size).IsRequired().HasMaxLength(50);
+        builder.Entity<Design>().Property(p => p.Img).IsRequired().HasMaxLength(200);
+
         
         //Relatioships
         
