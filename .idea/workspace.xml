@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="462589b0-1a8a-444c-9612-fc6405788220" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/SneakerArt.API.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SneakerArt.API/Controllers/WeatherForecastController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SneakerArt.API/SneakerArt.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SneakerArt.API/SneakerArt.API.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SneakerArt.API/WeatherForecast.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SneakerArt.API/obj/Debug/net7.0/SneakerArt.API.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SneakerArt.API/obj/Debug/net7.0/SneakerArt.API.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SneakerArt.API/obj/Debug/net7.0/SneakerArt.API.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SneakerArt.API/obj/Debug/net7.0/SneakerArt.API.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SneakerArt.API/obj/SneakerArt.API.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/SneakerArt.API/obj/SneakerArt.API.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SneakerArt.API/obj/SneakerArt.API.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/SneakerArt.API/obj/SneakerArt.API.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SneakerArt.API/obj/SneakerArt.API.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/SneakerArt.API/obj/SneakerArt.API.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SneakerArt.API/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/SneakerArt.API/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SneakerArt.API/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SneakerArt.API/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SneakerArt.API/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/SneakerArt.API/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SneakerArt.API/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/SneakerArt.API/obj/rider.project.restore.info" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2QWKpaAF9FFcP2OGEnQ2PyOJhMD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="462589b0-1a8a-444c-9612-fc6405788220" name="Changes" comment="" />
+      <created>1685464082493</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1685464082493</updated>
+      <workItem from="1685464083849" duration="5000" />
+      <workItem from="1685465433400" duration="5000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
