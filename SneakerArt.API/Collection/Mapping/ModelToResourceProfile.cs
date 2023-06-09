@@ -10,5 +10,6 @@ public class ModelToResourceProfile : Profile
     {
         CreateMap<Shoe, ShoeResource>();
         CreateMap<Design, DesignResource>();
+        CreateMap<Comment, CommentResource>();
     }
 }

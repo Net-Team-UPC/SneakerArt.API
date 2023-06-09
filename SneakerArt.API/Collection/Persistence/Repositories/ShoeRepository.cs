@@ -27,6 +27,14 @@ public class ShoeRepository : BaseRepository, IShoeRepository
         return await _context.Shoes.FindAsync(id);
     }
 
+    public async Task<IEnumerable<Shoe>> FindByCommentIdAsync(int commentId)
+    {
+        return await _context.Shoes
+            .Where(p => p.CommentId == commentId)
+            .Include(p => p.Comment)
+            .ToListAsync();
+    }
+
     public void Update(Shoe shoe)
     {
         _context.Shoes.Update(shoe);

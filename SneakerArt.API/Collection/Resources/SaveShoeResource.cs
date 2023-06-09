@@ -17,4 +17,7 @@ public class SaveShoeResource
     
     [Required]
     public string Img { get; set; }
+    
+    [Required]
+    public int CommentId { get; set; }
 }
