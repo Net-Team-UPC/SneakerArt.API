@@ -23,6 +23,11 @@ public class ShoeService : IShoeService
         return await _shoeRepository.ListAsync();
     }
 
+    public async Task<IEnumerable<Shoe>> ListByCommentIdAsync(int commentId)
+    {
+        return await _shoeRepository.FindByCommentIdAsync(commentId);
+    }
+
     public async Task<ShoeResponse> SaveAsync(Shoe shoe)
     {
         try
