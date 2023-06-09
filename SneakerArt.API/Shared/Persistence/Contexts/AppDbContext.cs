@@ -15,6 +15,7 @@ public class AppDbContext : DbContext
     public DbSet<Profile> Profiles { get; set; }
     
     public DbSet<Design> Designs { get; set; }
+    public DbSet<Comment> Comments { get; set; }
 
 
     protected override void OnModelCreating(ModelBuilder builder)
@@ -49,8 +50,17 @@ public class AppDbContext : DbContext
         builder.Entity<Design>().Property(p => p.Size).IsRequired().HasMaxLength(50);
         builder.Entity<Design>().Property(p => p.Img).IsRequired().HasMaxLength(200);
 
-        
+        //Comments Configuration
+        builder.Entity<Comment>().ToTable("Comments");
+        builder.Entity<Comment>().HasKey(p => p.Id);
+        builder.Entity<Comment>().Property(p => p.Id).IsRequired().ValueGeneratedOnAdd();
+        builder.Entity<Comment>().Property(p => p.Name).IsRequired().HasMaxLength(150);
+
         //Relatioships
+        builder.Entity<Comment>()
+            .HasMany(p => p.Shoes)
+            .WithOne(p => p.Comment)
+            .HasForeignKey(p => p.CommentId);
         
         //Apply snake case naming convention
         
