@@ -60,3 +60,13 @@ D:\ProyectosApliWeb\SneakerArt.API\SneakerArt.API\obj\Debug\net7.0\refint\Sneake
 D:\ProyectosApliWeb\SneakerArt.API\SneakerArt.API\obj\Debug\net7.0\SneakerArt.API.pdb
 D:\ProyectosApliWeb\SneakerArt.API\SneakerArt.API\obj\Debug\net7.0\SneakerArt.API.genruntimeconfig.cache
 D:\ProyectosApliWeb\SneakerArt.API\SneakerArt.API\obj\Debug\net7.0\ref\SneakerArt.API.dll
+C:\Users\Pieri\OneDrive\Documents\GitHub\SneakerArt.API\SneakerArt.API\obj\Debug\net7.0\SneakerArt.API.csproj.AssemblyReference.cache
+C:\Users\Pieri\OneDrive\Documents\GitHub\SneakerArt.API\SneakerArt.API\obj\Debug\net7.0\SneakerArt.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pieri\OneDrive\Documents\GitHub\SneakerArt.API\SneakerArt.API\obj\Debug\net7.0\SneakerArt.API.AssemblyInfoInputs.cache
+C:\Users\Pieri\OneDrive\Documents\GitHub\SneakerArt.API\SneakerArt.API\obj\Debug\net7.0\SneakerArt.API.AssemblyInfo.cs
+C:\Users\Pieri\OneDrive\Documents\GitHub\SneakerArt.API\SneakerArt.API\obj\Debug\net7.0\SneakerArt.API.csproj.CoreCompileInputs.cache
+C:\Users\Pieri\OneDrive\Documents\GitHub\SneakerArt.API\SneakerArt.API\obj\Debug\net7.0\SneakerArt.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Pieri\OneDrive\Documents\GitHub\SneakerArt.API\SneakerArt.API\obj\Debug\net7.0\SneakerArt.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Pieri\OneDrive\Documents\GitHub\SneakerArt.API\SneakerArt.API\obj\Debug\net7.0\SneakerArt.API.dll
+C:\Users\Pieri\OneDrive\Documents\GitHub\SneakerArt.API\SneakerArt.API\obj\Debug\net7.0\refint\SneakerArt.API.dll
+C:\Users\Pieri\OneDrive\Documents\GitHub\SneakerArt.API\SneakerArt.API\obj\Debug\net7.0\SneakerArt.API.pdb

@@ -1,4 +1,5 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=EF814355_002DC9C0_002D4FF8_002DAED4_002D366E628F4A6C_002Fd_003ASecurity_002Fd_003ADomain_002Fd_003AServices_002Ff_003AIUserService_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=aa1129d2_002D4665_002D4d62_002D967c_002D6927c09e7406/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Add Shoe with unique data" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::18BC7CE7-6DDF-4EA3-941B-5402DD304C0F::net7.0::SneakerArt.API.Tests.Features.ShoesServiceTestsFeature.AddShoeWithUniqueData&lt;/TestId&gt;&#xD;
