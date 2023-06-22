@@ -20,7 +20,6 @@
     <ItemGroup>
       <Folder Include="Security\Autorization\" />
       <Folder Include="Security\Domain\" />
-      <Folder Include="Security\Exceptions\" />
       <Folder Include="Security\Interfaces\" />
       <Folder Include="Security\Mapping\" />
       <Folder Include="Security\Persistence\" />
