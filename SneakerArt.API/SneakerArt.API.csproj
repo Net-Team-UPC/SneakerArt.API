@@ -21,7 +21,6 @@
       <Folder Include="Security\Autorization\" />
       <Folder Include="Security\Domain\" />
       <Folder Include="Security\Interfaces\" />
-      <Folder Include="Security\Persistence\" />
       <Folder Include="Security\Resources\" />
       <Folder Include="Security\Services\" />
     </ItemGroup>
