@@ -30,7 +30,7 @@ public class UserService : IUserService
     {
         var user = await _userRepository.FindByUsernameAsync(model.Username);
         Console.WriteLine($"Request: {model.Username}, {model.Password}");
-        Console.WriteLine($"User1: {user.Id}, {user.FirstName}, {user.LastName}, {user.Username}, {user.PasswordHash}");
+        Console.WriteLine($"User: {user.Id}, {user.FirstName}, {user.LastName}, {user.Username}, {user.PasswordHash}");
         
         // Validate
         if (user == null || !BCryptNet.Verify(model.Password, user.PasswordHash))
@@ -46,15 +46,15 @@ public class UserService : IUserService
         return response;
     }
 
-    public async Task<IEnumerable<User>> ListAsync()
+    public async Task<IEnumerable<Domain.Models.User>> ListAsync()
     {
         return await _userRepository.ListAsync();
     }
 
-    public async Task<User> GetByIdAsync(int id)
+    public async Task<Domain.Models.User> GetByIdAsync(int id)
     {
         var user = await _userRepository.FindByIdAsync(id);
-        if (user == null) throw new AppException("User1 not found");
+        if (user == null) throw new AppException("User not found");
         return user;
     }
 
@@ -65,8 +65,8 @@ public class UserService : IUserService
             throw new AppException($"Username '{model.Username}'is already taken");
         
         // Map model to new user object
-        var user = _mapper.Map<User>(model);
-        Console.WriteLine($"User1 id: {user.Id}");
+        var user = _mapper.Map<Domain.Models.User>(model);
+        Console.WriteLine($"User id: {user.Id}");
         
         // Hash password
         user.PasswordHash = BCryptNet.HashPassword(model.Password);
@@ -124,10 +124,10 @@ public class UserService : IUserService
         }
     }
 
-    private User GetById(int id)
+    private Domain.Models.User GetById(int id)
     {
         var user = _userRepository.FindById(id);
-        if (user == null) throw new KeyNotFoundException("User1 not found");
+        if (user == null) throw new KeyNotFoundException("User not found");
         return user;
     }
 }

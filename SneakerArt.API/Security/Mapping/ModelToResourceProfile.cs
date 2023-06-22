@@ -9,7 +9,7 @@ public class ModelToResourceProfile : Profile
 {
     protected ModelToResourceProfile()
     {
-        CreateMap<User, AuthenticateResponse>();
-        CreateMap<User, UserResource>();
+        CreateMap<Domain.Models.User, AuthenticateResponse>();
+        CreateMap<Domain.Models.User, UserResource>();
     }
 }

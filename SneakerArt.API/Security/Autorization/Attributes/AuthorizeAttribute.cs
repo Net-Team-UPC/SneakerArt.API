@@ -21,7 +21,7 @@ public class AuthorizeAttribute : Attribute, IAuthorizationFilter
             // Then skip authorization process and return
             return;
         // Otherwise, perform authorization process
-        var user = (User)context.HttpContext.Items["User1"];
+        var user = (Domain.Models.User)context.HttpContext.Items["User"]!;
         if (user == null)
             context.Result = new JsonResult(
                 new { message = "Unauthorized" })

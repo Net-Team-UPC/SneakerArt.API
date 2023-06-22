@@ -8,8 +8,8 @@ public class ResourceToModelProfile : Profile
 {
     protected ResourceToModelProfile()
     {
-        CreateMap<RegisterRequest, User>();
-        CreateMap<UpdateRequest, User>()
+        CreateMap<RegisterRequest, Domain.Models.User>();
+        CreateMap<UpdateRequest, Domain.Models.User>()
             .ForAllMembers(options => options.Condition(
                 (source, target, property) =>
                 {

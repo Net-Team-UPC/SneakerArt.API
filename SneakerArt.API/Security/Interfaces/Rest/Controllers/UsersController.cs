@@ -1,5 +1,5 @@
 using AutoMapper;
-using SneakerArt.API.Security.Authorization.Attributes;
+using Microsoft.AspNetCore.Authorization;
 using SneakerArt.API.Security.Domain.Models;
 using SneakerArt.API.Security.Domain.Services;
 using SneakerArt.API.Security.Domain.Services.Communication;
@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace SneakerArt.API.Security.Interfaces.Rest.Controllers;
 
-[Authorize]
+[Authorization.Attributes.Authorize]
 [ApiController]
 [Route("/api/v1/[controller]")]
 public class UsersController : ControllerBase
@@ -42,7 +42,7 @@ public class UsersController : ControllerBase
     public async Task<IActionResult> GetAll()
     {
         var users = await _userService.ListAsync();
-        var resources = _mapper.Map<IEnumerable<User>, IEnumerable<UserResource>>(users);
+        var resources = _mapper.Map<IEnumerable<Domain.Models.User>, IEnumerable<UserResource>>(users);
         return Ok(resources);
     }
 }
