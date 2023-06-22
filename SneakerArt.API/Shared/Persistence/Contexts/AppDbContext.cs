@@ -16,7 +16,7 @@ public class AppDbContext : DbContext
     
     public DbSet<Design> Designs { get; set; }
     public DbSet<Comment> Comments { get; set; }
-    public DbSet<User> User { get; set; }
+    public DbSet<Security.Domain.Models.User> Users { get; set; }
 
 
     protected override void OnModelCreating(ModelBuilder builder)
