@@ -1,7 +1,7 @@
-using LearningCenter.API.Security.Domain.Models;
-using LearningCenter.API.Security.Domain.Services.Communication;
+using SneakerArt.API.Security.Domain.Models;
+using SneakerArt.API.Security.Domain.Services.Communication;
 
-namespace LearningCenter.API.Security.Domain.Services;
+namespace SneakerArt.API.Security.Domain.Services;
 
 public interface IUserService
 {

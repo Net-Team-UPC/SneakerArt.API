@@ -1,8 +1,9 @@
-using LearningCenter.API.Security.Domain.Models;
+using Microsoft.AspNetCore.Authorization;
+using SneakerArt.API.Security.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace LearningCenter.API.Security.Authorization.Attributes;
+namespace SneakerArt.API.Security.Authorization.Attributes;
 
 [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
 public class AuthorizeAttribute : Attribute, IAuthorizationFilter
@@ -20,7 +21,7 @@ public class AuthorizeAttribute : Attribute, IAuthorizationFilter
             // Then skip authorization process and return
             return;
         // Otherwise, perform authorization process
-        var user = (User)context.HttpContext.Items["User"];
+        var user = (User)context.HttpContext.Items["User1"];
         if (user == null)
             context.Result = new JsonResult(
                 new { message = "Unauthorized" })

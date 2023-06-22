@@ -1,6 +1,4 @@
-using LearningCenter.API.Security.Domain.Models;
-
-namespace LearningCenter.API.Security.Domain.Repositories;
+namespace SneakerArt.API.Security.Domain.Repositories;
 
 public interface IUserRepository
 {

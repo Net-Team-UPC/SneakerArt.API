@@ -1,13 +1,13 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using LearningCenter.API.Security.Authorization.Handlers.Interfaces;
-using LearningCenter.API.Security.Authorization.Settings;
-using LearningCenter.API.Security.Domain.Models;
+using SneakerArt.API.Security.Authorization.Handlers.Interfaces;
+using SneakerArt.API.Security.Authorization.Settings;
+using SneakerArt.API.Security.Domain.Models;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 
-namespace LearningCenter.API.Security.Authorization.Handlers.Implementations;
+namespace SneakerArt.API.Security.Authorization.Handlers.Implementations;
 
 public class JwtHandler : IJwtHandler
 {
@@ -26,7 +26,7 @@ public class JwtHandler : IJwtHandler
         var secret = _appSettings.Secret;
         var key = Encoding.ASCII.GetBytes(secret);
         Console.WriteLine($"Secret key: {key.Length}");
-        Console.WriteLine($"User Id: {user.Id.ToString()}");
+        Console.WriteLine($"User1 Id: {user.Id.ToString()}");
         var tokenDescriptor = new SecurityTokenDescriptor
         {
             Subject = new ClaimsIdentity(new[]

@@ -70,7 +70,7 @@ builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IShoeRepository, ShoeRepository>();
 builder.Services.AddScoped<IShoeService, ShoeService>();
 
-//User Bounded Context Injection Configuration
+//User1 Bounded Context Injection Configuration
 builder.Services.AddScoped<IProfileRepository, ProfileRepository>();
 builder.Services.AddScoped<IProfileService, ProfileService>();
 

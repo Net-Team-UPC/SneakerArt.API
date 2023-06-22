@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace LearningCenter.API.Security.Domain.Services.Communication;
+namespace SneakerArt.API.Security.Domain.Services.Communication;
 
 public class RegisterRequest
 {

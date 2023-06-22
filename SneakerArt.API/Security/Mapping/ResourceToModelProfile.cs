@@ -1,8 +1,8 @@
 using AutoMapper;
-using LearningCenter.API.Security.Domain.Models;
-using LearningCenter.API.Security.Domain.Services.Communication;
+using SneakerArt.API.Security.Domain.Models;
+using SneakerArt.API.Security.Domain.Services.Communication;
 
-namespace LearningCenter.API.Security.Mapping;
+namespace SneakerArt.API.Security.Mapping;
 
 public class ResourceToModelProfile : Profile
 {

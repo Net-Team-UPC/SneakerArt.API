@@ -1,14 +1,14 @@
 using AutoMapper;
-using LearningCenter.API.Security.Authorization.Handlers.Interfaces;
-using LearningCenter.API.Security.Domain.Models;
-using LearningCenter.API.Security.Domain.Repositories;
-using LearningCenter.API.Security.Domain.Services;
-using LearningCenter.API.Security.Domain.Services.Communication;
-using LearningCenter.API.Security.Exceptions;
-using LearningCenter.API.Shared.Domain.Repositories;
+using SneakerArt.API.Security.Authorization.Handlers.Interfaces;
+using SneakerArt.API.Security.Domain.Models;
+using SneakerArt.API.Security.Domain.Repositories;
+using SneakerArt.API.Security.Domain.Services;
+using SneakerArt.API.Security.Domain.Services.Communication;
+using SneakerArt.API.Security.Exceptions;
+using SneakerArt.API.Shared.Domain.Repositories;
 using BCryptNet = BCrypt.Net.BCrypt;
 
-namespace LearningCenter.API.Security.Services;
+namespace SneakerArt.API.Security.Services;
 
 public class UserService : IUserService
 {
@@ -30,7 +30,7 @@ public class UserService : IUserService
     {
         var user = await _userRepository.FindByUsernameAsync(model.Username);
         Console.WriteLine($"Request: {model.Username}, {model.Password}");
-        Console.WriteLine($"User: {user.Id}, {user.FirstName}, {user.LastName}, {user.Username}, {user.PasswordHash}");
+        Console.WriteLine($"User1: {user.Id}, {user.FirstName}, {user.LastName}, {user.Username}, {user.PasswordHash}");
         
         // Validate
         if (user == null || !BCryptNet.Verify(model.Password, user.PasswordHash))
@@ -54,7 +54,7 @@ public class UserService : IUserService
     public async Task<User> GetByIdAsync(int id)
     {
         var user = await _userRepository.FindByIdAsync(id);
-        if (user == null) throw new AppException("User not found");
+        if (user == null) throw new AppException("User1 not found");
         return user;
     }
 
@@ -66,7 +66,7 @@ public class UserService : IUserService
         
         // Map model to new user object
         var user = _mapper.Map<User>(model);
-        Console.WriteLine($"User id: {user.Id}");
+        Console.WriteLine($"User1 id: {user.Id}");
         
         // Hash password
         user.PasswordHash = BCryptNet.HashPassword(model.Password);
@@ -127,7 +127,7 @@ public class UserService : IUserService
     private User GetById(int id)
     {
         var user = _userRepository.FindById(id);
-        if (user == null) throw new KeyNotFoundException("User not found");
+        if (user == null) throw new KeyNotFoundException("User1 not found");
         return user;
     }
 }

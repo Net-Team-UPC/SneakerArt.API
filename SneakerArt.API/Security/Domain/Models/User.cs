@@ -1,6 +1,5 @@
-using System.Text.Json.Serialization;
-
-namespace LearningCenter.API.Security.Domain.Models;
+﻿using System.Text.Json.Serialization;
+namespace SneakerArt.API.Security.Domain.Models;
 
 public class User
 {

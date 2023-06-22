@@ -1,6 +1,6 @@
 using System.Globalization;
 
-namespace LearningCenter.API.Security.Exceptions;
+namespace SneakerArt.API.Security.Exceptions;
 
 public class AppException : Exception
 {

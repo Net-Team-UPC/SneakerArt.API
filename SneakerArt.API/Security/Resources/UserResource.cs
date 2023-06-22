@@ -1,4 +1,4 @@
-namespace LearningCenter.API.Security.Resources;
+namespace SneakerArt.API.Security.Resources;
 
 public class UserResource
 {

@@ -1,12 +1,12 @@
 using AutoMapper;
-using LearningCenter.API.Security.Authorization.Attributes;
-using LearningCenter.API.Security.Domain.Models;
-using LearningCenter.API.Security.Domain.Services;
-using LearningCenter.API.Security.Domain.Services.Communication;
-using LearningCenter.API.Security.Resources;
+using SneakerArt.API.Security.Authorization.Attributes;
+using SneakerArt.API.Security.Domain.Models;
+using SneakerArt.API.Security.Domain.Services;
+using SneakerArt.API.Security.Domain.Services.Communication;
+using SneakerArt.API.Security.Resources;
 using Microsoft.AspNetCore.Mvc;
 
-namespace LearningCenter.API.Security.Interfaces.Rest.Controllers;
+namespace SneakerArt.API.Security.Interfaces.Rest.Controllers;
 
 [Authorize]
 [ApiController]

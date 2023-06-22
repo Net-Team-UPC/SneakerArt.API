@@ -1,4 +1,4 @@
-namespace LearningCenter.API.Security.Authorization.Settings;
+namespace SneakerArt.API.Security.Authorization.Settings;
 
 public class AppSettings
 {

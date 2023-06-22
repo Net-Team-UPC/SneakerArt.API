@@ -1,6 +1,6 @@
-using LearningCenter.API.Security.Domain.Models;
+using SneakerArt.API.Security.Domain.Models;
 
-namespace LearningCenter.API.Security.Authorization.Handlers.Interfaces;
+namespace SneakerArt.API.Security.Authorization.Handlers.Interfaces;
 
 public interface IJwtHandler
 {

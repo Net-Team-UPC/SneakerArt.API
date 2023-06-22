@@ -1,8 +1,8 @@
 using System.Net;
 using System.Text.Json;
-using LearningCenter.API.Security.Exceptions;
+using SneakerArt.API.Security.Exceptions;
 
-namespace LearningCenter.API.Security.Authorization.Middleware;
+namespace SneakerArt.API.Security.Authorization.Middleware;
 
 public class ErrorHandlerMiddleware
 {

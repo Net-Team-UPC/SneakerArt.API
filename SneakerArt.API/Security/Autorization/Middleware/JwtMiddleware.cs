@@ -1,8 +1,8 @@
-using LearningCenter.API.Security.Authorization.Handlers.Interfaces;
-using LearningCenter.API.Security.Authorization.Settings;
-using LearningCenter.API.Security.Domain.Services;
+using SneakerArt.API.Security.Authorization.Handlers.Interfaces;
+using SneakerArt.API.Security.Authorization.Settings;
+using SneakerArt.API.Security.Domain.Services;
 
-namespace LearningCenter.API.Security.Authorization.Middleware;
+namespace SneakerArt.API.Security.Authorization.Middleware;
 
 public class JwtMiddleware
 {
@@ -32,7 +32,7 @@ public class JwtMiddleware
         var userId = handler.ValidateToken(token);
 
         if (userId != null)
-            context.Items["User"] = await userService.GetByIdAsync(userId.Value);
+            context.Items["User1"] = await userService.GetByIdAsync(userId.Value);
         
         // Call next in chain
         

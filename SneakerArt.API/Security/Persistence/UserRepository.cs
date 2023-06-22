@@ -1,10 +1,10 @@
-using LearningCenter.API.Security.Domain.Models;
-using LearningCenter.API.Security.Domain.Repositories;
-using LearningCenter.API.Shared.Persistence.Contexts;
-using LearningCenter.API.Shared.Persistence.Repositories;
+using SneakerArt.API.Security.Domain.Models;
+using SneakerArt.API.Security.Domain.Repositories;
+using SneakerArt.API.Shared.Persistence.Contexts;
+using SneakerArt.API.Shared.Persistence.Repositories;
 using Microsoft.EntityFrameworkCore;
 
-namespace LearningCenter.API.Security.Persistence;
+namespace SneakerArt.API.Security.Persistence;
 
 public class UserRepository : BaseRepository, IUserRepository
 {
