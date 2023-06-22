@@ -1,26 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pieri\\OneDrive\\Documents\\GitHub\\SneakerArt.API\\SneakerArt.API\\SneakerArt.API.csproj": {}
+    "D:\\ProyectosApliWeb\\SneakerArt.API\\SneakerArt.API\\SneakerArt.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pieri\\OneDrive\\Documents\\GitHub\\SneakerArt.API\\SneakerArt.API\\SneakerArt.API.csproj": {
+    "D:\\ProyectosApliWeb\\SneakerArt.API\\SneakerArt.API\\SneakerArt.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pieri\\OneDrive\\Documents\\GitHub\\SneakerArt.API\\SneakerArt.API\\SneakerArt.API.csproj",
+        "projectUniqueName": "D:\\ProyectosApliWeb\\SneakerArt.API\\SneakerArt.API\\SneakerArt.API.csproj",
         "projectName": "SneakerArt.API",
-        "projectPath": "C:\\Users\\Pieri\\OneDrive\\Documents\\GitHub\\SneakerArt.API\\SneakerArt.API\\SneakerArt.API.csproj",
-        "packagesPath": "C:\\Users\\Pieri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pieri\\OneDrive\\Documents\\GitHub\\SneakerArt.API\\SneakerArt.API\\obj\\",
+        "projectPath": "D:\\ProyectosApliWeb\\SneakerArt.API\\SneakerArt.API\\SneakerArt.API.csproj",
+        "packagesPath": "C:\\Users\\franc\\.nuget\\packages\\",
+        "outputPath": "D:\\ProyectosApliWeb\\SneakerArt.API\\SneakerArt.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Pieri\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\franc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -103,7 +104,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
