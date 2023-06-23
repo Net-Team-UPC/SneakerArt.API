@@ -32,7 +32,7 @@ public class JwtMiddleware
         var userId = handler.ValidateToken(token);
 
         if (userId != null)
-            context.Items["User1"] = await userService.GetByIdAsync(userId.Value);
+            context.Items["User"] = await userService.GetByIdAsync(userId.Value);
         
         // Call next in chain
         
