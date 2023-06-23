@@ -6,7 +6,7 @@ namespace SneakerArt.API.Security.Mapping;
 
 public class ResourceToModelProfile : Profile
 {
-    protected ResourceToModelProfile()
+    public ResourceToModelProfile()
     {
         CreateMap<RegisterRequest, Domain.Models.User>();
         CreateMap<UpdateRequest, Domain.Models.User>()
