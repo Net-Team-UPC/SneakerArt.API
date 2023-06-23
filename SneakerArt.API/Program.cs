@@ -125,6 +125,14 @@ if (app.Environment.IsDevelopment())
     });
 }
 
+
+app.UseCors(builder =>
+{
+    builder.WithOrigins("*") // Reemplaza con la URL de tu frontend
+        .AllowAnyMethod()
+        .AllowAnyHeader();
+});
+
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
@@ -132,6 +140,7 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
 
 //Required for Tests
 public partial class Program {}
