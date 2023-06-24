@@ -13,22 +13,22 @@ the API was created to exchange information with the SneakerArt web application.
 you can access the deployed API here: http://deployapliweb123-001-site1.etempurl.com
 
 ## Endpoints
-Shoes
+## Shoes
 * GET /api/v1/shoes: Gets all available shoes.
- * POST /api/v1/shoes: Creates a new shoe.
- * PUT /api/v1/shoes/{id}: Updates an existing shoe according to its identifier.
- * DELETE /api/v1/shoes/{id}: Deletes an existing shoe according to its identifier.
-Designs
-*  GET /api/v1/designs: Gets all available designs.
-*  POST /api/v1/designs: Creates a new design.
-*  PUT /api/v1/designs/{id}: Updates an existing design according to its identifier.
-*  DELETE /api/v1/designs/{id}: Deletes an existing design according to its identifier.
- Comments
+* POST /api/v1/shoes: Creates a new shoe.
+* PUT /api/v1/shoes/{id}: Updates an existing shoe according to its identifier.
+* DELETE /api/v1/shoes/{id}: Deletes an existing shoe according to its identifier.
+## Designs
+ * GET /api/v1/designs: Gets all available designs.
+ * POST /api/v1/designs: Creates a new design.
+ * PUT /api/v1/designs/{id}: Updates an existing design according to its identifier.
+ * DELETE /api/v1/designs/{id}: Deletes an existing design according to its identifier.
+## Comments
 *  GET /api/v1/comments: Gets all available comments.
  * POST /api/v1/comments: Creates a new comment.
   * PUT /api/v1/comments/{id}: Updates an existing comment according to its identifier.
  * DELETE /api/v1/comments/{id}: Deletes an existing comment according to its identifier.
-Profiles
+## Profiles
 *  GET /api/v1/profiles: Gets all available profiles.
 *  POST /api/v1/profiles: Creates a new profile.
 *  PUT /api/v1/profiles/{id}: Updates an existing profile according to its identifier.
