@@ -29,8 +29,8 @@ public class ProfilesController : ControllerBase
     [HttpGet]
     [ProducesResponseType(typeof(IEnumerable<ProfileResource>), 200)]
     [SwaggerOperation(
-        Summary = "Get All Profiles from User",
-        Description = "Get existing Profiles associated with the User"
+        Summary = "Get All Profiles from User1",
+        Description = "Get existing Profiles associated with the User1"
         )]
     public async Task<IEnumerable<ProfileResource>> GetAllAsync()
     {
@@ -44,8 +44,8 @@ public class ProfilesController : ControllerBase
     [ProducesResponseType(typeof(List<string>),400)]
     [ProducesResponseType(500)]
     [SwaggerOperation(
-        Summary = "Post a Profile to User",
-        Description = "Post a new Profile to the User"
+        Summary = "Post a Profile to User1",
+        Description = "Post a new Profile to the User1"
     )]
     public async Task<IActionResult> PostAsync([FromBody] SaveProfileResource resource)
     {
@@ -67,8 +67,8 @@ public class ProfilesController : ControllerBase
 
     [HttpPut("{id}")]
     [SwaggerOperation(
-        Summary = "Put a Profile from User",
-        Description = "Put existing Profile from the User"
+        Summary = "Put a Profile from User1",
+        Description = "Put existing Profile from the User1"
     )]
     public async Task<IActionResult> PutAsync(int id, [FromBody] SaveProfileResource resource)
     {
@@ -90,8 +90,8 @@ public class ProfilesController : ControllerBase
 
     [HttpDelete("{id}")]
     [SwaggerOperation(
-        Summary = "Delete a Profile to User",
-        Description = "Delete existing Profile to the User"
+        Summary = "Delete a Profile to User1",
+        Description = "Delete existing Profile to the User1"
     )]
     public async Task<IActionResult> DeleteAsync(int id)
     {
