@@ -2,18 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="462589b0-1a8a-444c-9612-fc6405788220" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/SneakerArt.API.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SneakerArt.API/Controllers/WeatherForecastController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SneakerArt.API/SneakerArt.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SneakerArt.API/SneakerArt.API.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SneakerArt.API/WeatherForecast.cs" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/sneakerart.api.metadata.v6.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/sneakerart.api.projects.v6.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/SneakerArt.API/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/SneakerArt.API/FileContentIndex/10de4021-0333-402b-b3f9-0b8f263580ab.vsidx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/SneakerArt.API/FileContentIndex/925d2bad-6223-4f3e-bd76-9eb000deda00.vsidx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/SneakerArt.API/FileContentIndex/read.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/SneakerArt.API/v17/.futdcache.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/SneakerArt.API/v17/.suo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SneakerArt.API/.config/dotnet-tools.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SneakerArt.API/Properties/PublishProfiles/deployapliweb123-001-site1 - FTP.pubxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SneakerArt.API/Properties/PublishProfiles/deployapliweb123-001-site1 - FTP.pubxml.user" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SneakerArt.API/Properties/PublishProfiles/deployapliweb123-001-site1 - Web Deploy.pubxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SneakerArt.API/Properties/PublishProfiles/deployapliweb123-001-site1 - Web Deploy.pubxml.user" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SneakerArt.API/SneakerArt.API.csproj.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SneakerArt.API/bin/Debug/net7.0/SneakerArt.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SneakerArt.API/bin/Debug/net7.0/SneakerArt.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SneakerArt.API/bin/Debug/net7.0/SneakerArt.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SneakerArt.API/bin/Debug/net7.0/SneakerArt.API.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SneakerArt.API/obj/Debug/net7.0/SneakerArt.API.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/SneakerArt.API/obj/Debug/net7.0/SneakerArt.API.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SneakerArt.API/obj/Debug/net7.0/SneakerArt.API.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SneakerArt.API/obj/Debug/net7.0/SneakerArt.API.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SneakerArt.API/obj/Debug/net7.0/SneakerArt.API.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SneakerArt.API/obj/Debug/net7.0/SneakerArt.API.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SneakerArt.API/obj/Debug/net7.0/SneakerArt.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SneakerArt.API/obj/Debug/net7.0/SneakerArt.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SneakerArt.API/obj/Debug/net7.0/SneakerArt.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/SneakerArt.API/obj/Debug/net7.0/SneakerArt.API.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SneakerArt.API/obj/Debug/net7.0/ref/SneakerArt.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SneakerArt.API/obj/Debug/net7.0/ref/SneakerArt.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SneakerArt.API/obj/Debug/net7.0/refint/SneakerArt.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/SneakerArt.API/obj/Debug/net7.0/refint/SneakerArt.API.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SneakerArt.API/obj/SneakerArt.API.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/SneakerArt.API/obj/SneakerArt.API.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SneakerArt.API/obj/SneakerArt.API.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/SneakerArt.API/obj/SneakerArt.API.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SneakerArt.API/obj/SneakerArt.API.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/SneakerArt.API/obj/SneakerArt.API.csproj.nuget.g.targets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SneakerArt.API/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/SneakerArt.API/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SneakerArt.API/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/SneakerArt.API/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SneakerArt.API/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/SneakerArt.API/obj/project.packagespec.json" afterDir="false" />
@@ -27,19 +39,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2QWKpaAF9FFcP2OGEnQ2PyOJhMD" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -50,6 +65,7 @@
       <updated>1685464082493</updated>
       <workItem from="1685464083849" duration="5000" />
       <workItem from="1685465433400" duration="5000" />
+      <workItem from="1687573947496" duration="36000" />
     </task>
     <servers />
   </component>
